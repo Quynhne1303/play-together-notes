@@ -10,6 +10,7 @@
     <div class="container">
         <header>
             <h1>🎮 Play Together - Ghi Chú Lật Thẻ</h1>
+            <button id="helpBtn" class="help-btn" title="Hướng dẫn sử dụng">?</button>
         </header>
 
         <div class="controls">
@@ -75,6 +76,37 @@
         <footer>
             <p>💡 Chọn icon rồi click vào ô để đánh dấu</p>
         </footer>
+    </div>
+
+    <!-- Modal Hướng dẫn -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📖 Hướng Dẫn Sử Dụng</h2>
+            <div class="help-content">
+                <h3>🎯 Tạo Bảng</h3>
+                <p>1. Chọn số hàng và cột (1-8)<br>
+                2. Nhấn nút <strong>"Tạo Bảng"</strong> để tạo lưới mới</p>
+
+                <h3>🎨 Đánh Dấu Ô</h3>
+                <p>1. Chọn một biểu tượng từ danh sách bên dưới<br>
+                2. Click vào ô trong bảng để đặt biểu tượng</p>
+
+                <h3>❌ Xóa Ô</h3>
+                <p>1. Chọn biểu tượng <strong>X đỏ</strong><br>
+                2. Click vào ô muốn xóa - ô đó sẽ biến mất khỏi bảng</p>
+
+                <h3>⏮️ Hoàn Tác / Làm Lại</h3>
+                <p><strong>Hoàn Tác</strong>: Quay lại thao tác trước đó<br>
+                <strong>Làm Lại</strong>: Tiến tới thao tác tiếp theo</p>
+
+                <h3>🗑️ Xóa Bảng</h3>
+                <p>Nhấn <strong>"Xóa Bảng"</strong> để xóa toàn bộ nội dung và khôi phục các ô đã xóa</p>
+
+                <h3>💾 Lưu Tự Động</h3>
+                <p>Tất cả thay đổi được lưu tự động vào trình duyệt</p>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>

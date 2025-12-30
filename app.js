@@ -16,6 +16,9 @@ const redoBtn = document.getElementById('redoBtn');
 const clearBtn = document.getElementById('clearBtn');
 const grid = document.getElementById('grid');
 const iconsList = document.getElementById('iconsList');
+const helpBtn = document.getElementById('helpBtn');
+const helpModal = document.getElementById('helpModal');
+const closeModal = document.querySelector('.close');
 
 // Khởi tạo
 init();
@@ -270,6 +273,23 @@ function attachEventListeners() {
     
     colsInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') createBtn.click();
+    });
+    
+    // Nút hướng dẫn
+    helpBtn.addEventListener('click', () => {
+        helpModal.style.display = 'block';
+    });
+    
+    // Đóng modal
+    closeModal.addEventListener('click', () => {
+        helpModal.style.display = 'none';
+    });
+    
+    // Đóng modal khi click bên ngoài
+    window.addEventListener('click', (e) => {
+        if (e.target === helpModal) {
+            helpModal.style.display = 'none';
+        }
     });
 }
 
