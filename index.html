@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Together - Ghi Chú Lật Thẻ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Play Together - Ghi Chú Lật Thẻ</h1>
+        </header>
+
+        <div class="controls">
+            <div class="size-controls">
+                <div class="input-group">
+                    <label for="rows">Số hàng:</label>
+                    <input type="number" id="rows" min="1" max="8" value="4">
+                </div>
+                <div class="input-group">
+                    <label for="cols">Số cột:</label>
+                    <input type="number" id="cols" min="1" max="8" value="5">
+                </div>
+                <button id="createBtn" class="btn btn-primary">Tạo Bảng</button>
+            </div>
+            
+            <div class="action-controls">
+                <button id="undoBtn" class="btn btn-secondary">Hoàn Tác</button>
+                <button id="redoBtn" class="btn btn-secondary">Làm Lại</button>
+                <button id="clearBtn" class="btn btn-danger">Xóa Bảng</button>
+            </div>
+        </div>
+
+        <div class="icons-section">
+            <h2>Chọn biểu tượng:</h2>
+            <div class="icons-list" id="iconsList">
+                <div class="icon-item" data-icon="1">
+                    <img src="https://game-playtogether.vercel.app/1.png" alt="Icon 1">
+                </div>
+                <div class="icon-item" data-icon="2">
+                    <img src="https://game-playtogether.vercel.app/2.png" alt="Icon 2">
+                </div>
+                <div class="icon-item" data-icon="3">
+                    <img src="https://game-playtogether.vercel.app/3.png" alt="Icon 3">
+                </div>
+                <div class="icon-item" data-icon="4">
+                    <img src="https://game-playtogether.vercel.app/4.png" alt="Icon 4">
+                </div>
+                <div class="icon-item" data-icon="5">
+                    <img src="https://game-playtogether.vercel.app/5.png" alt="Icon 5">
+                </div>
+                <div class="icon-item" data-icon="6">
+                    <img src="https://game-playtogether.vercel.app/6.png" alt="Icon 6">
+                </div>
+                <div class="icon-item" data-icon="7">
+                    <img src="https://game-playtogether.vercel.app/7.png" alt="Icon 7">
+                </div>
+                <div class="icon-item" data-icon="8">
+                    <img src="https://game-playtogether.vercel.app/8.png" alt="Icon 8">
+                </div>
+                <div class="icon-item" data-icon="9">
+                    <img src="https://game-playtogether.vercel.app/9.png" alt="Icon 9">
+                </div>
+                <div class="icon-item" data-icon="clear">
+                    <span class="clear-icon">✕</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-section">
+            <div id="grid" class="grid"></div>
+        </div>
+
+        <footer>
+            <p>💡 Chọn icon rồi click vào ô để đánh dấu</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
